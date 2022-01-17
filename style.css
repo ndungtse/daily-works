@@ -1,78 +1,93 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0%;
+}
 body {
   padding: 0;
   margin: 0;
 
 }
-.container {
-  position:sticky;
-  margin-top: 100px;
-}
-nav {
+.navbar {
   position: sticky;
   z-index: 10;
   left: 0;
   right: 0;
   top:0 ;
+  align-items: center;
+  justify-content: center;
   font-family: 'Monlescrral', sans-serif;
   padding: 0 5%;
-  height: 100px;
+  height: 80px;
   background-color: #3e65da;
 }
 nav .logo { 
   float: left;
-  width: 40%;
-  height: 100%;
+  font-weight: bold;
   display: flex;
+  margin-top: 30px;
   align-items: center;
+  justify-content: center;
   font-size: 24px;
   color: #fff;
 }
+nav .logo:hover { 
+  cursor: pointer;
+}
 nav .links {
+  margin-top: 12px;
   float: right;
-  padding: 0;
-  margin: 0;
-  width: 60%;
-  height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 nav .links li {
   list-style: none;
 }
+.navlinks{
+  margin: 1px;
+}
 nav .links a {
-  display: block;
-  padding: 1em;
-  font-size: 16px;
-  font-weight: bold;
+  display: flex;
+  padding: 1.2em;
+  font-size: 1.1rem;
   color: #fff;
   text-decoration: none;
 }
-#nav-toggle {
-  position: absolute;
+nav .links a:hover {
+  color: #a7b4ee;
+}
+.navtoggle {
+  color: #fff;
+  display: none;
+  font-size: 1.5rem;
  
 }
-nav .icon-burger {
-   display: none;
-   position: absolute;
-   right: 5%;
-   top: 50%;
-   transform: translateY(-50%);
+@media screen and (max-width: 620px) {
+  .navtoggle{
+    position: absolute;
+    display: block;
+    top: 40%;
+    z-index: 2;
+    right: 5%;
+  }
+  .navbar{
+    padding: 0;
+  }
+  .logo{
+    margin-left: 30px;
+  }
+ nav .links {
+    background: #3e65da;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  
+}
 
-}
-nav .icon-burger .line {
-  width: 30px;
-  height: 5px;
-  background-color: #fff;
-  margin: 5px;
-  border-radius: 3px;
-}
-@media screen and (max-width: 168px) {
-  nav .links {
-    display: none;
-  }
-  nav .icon burger {
-    display: bluck;
-  }
-}
   
