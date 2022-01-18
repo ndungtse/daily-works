@@ -1,7 +1,16 @@
 * {
+  top: 0;
   padding: 0;
   box-sizing: border-box;
   margin: 0%;
+}
+:root{
+  --primary-color: #3e65da;
+  --seconary-color: #131313;
+}
+.dark-theme{
+  --primary-color: #131313;
+  --seconary-color: #fff;
 }
 body {
   padding: 0;
@@ -19,7 +28,6 @@ body {
   font-family: 'Monlescrral', sans-serif;
   padding: 0 5%;
   height: 80px;
-  background-color: #3e65da;
 }
 nav .logo { 
   float: left;
@@ -29,7 +37,7 @@ nav .logo {
   align-items: center;
   justify-content: center;
   font-size: 24px;
-  color: #fff;
+  color: #3e65da;
 }
 nav .logo:hover { 
   cursor: pointer;
@@ -51,25 +59,34 @@ nav .links a {
   display: flex;
   padding: 1.2em;
   font-size: 1.1rem;
-  color: #fff;
+  color: #3e65da;
   text-decoration: none;
 }
 nav .links a:hover {
-  color: #a7b4ee;
+  text-decoration: underline;
 }
 .navtoggle {
   color: #fff;
   display: none;
   font-size: 1.5rem;
+  cursor: pointer;
  
 }
+.checkbtn{
+  font-size: 30px;
+  color: #3e65da;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
 @media screen and (max-width: 620px) {
-  .navtoggle{
-    position: absolute;
+  .checkbtn{
     display: block;
-    top: 40%;
-    z-index: 2;
-    right: 5%;
   }
   .navbar{
     padding: 0;
@@ -77,17 +94,75 @@ nav .links a:hover {
   .logo{
     margin-left: 30px;
   }
- nav .links {
-    background: #3e65da;
-    position: fixed;
-    right: 0;
+ ul{
+    background: #ffffff;
+    position: absolute;
+    right: -1000px; 
+    top: 68px;
     width: 250px;
     z-index: 1;
     display: flex;
     flex-direction: column;
     margin-top: 80px;
-  }
-  
+    transition: all 0.5s;
+ }
+    #check:checked ~ ul{
+      right: 0;
+    }
+ 
 }
-
+.home{
+  margin-right: 0;
+  display: flex;
+  width: 100%;
+}
+.desript-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 620px;
+}
+h2{
+  margin-top: 250px;
+  margin-left: 50px;
+  font-size: 3rem;
+}
+p{
+  margin-left: 50px;
+  font-size: 1.2rem;
+}
+span{
+  color: #3e65da;
+}
+.desc-btn{
+  margin-top: 10px;
+  margin-left: 50px;
+  padding: 6px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  background-color: #3e65da;
+}
+.desc-btn:hover{
+  cursor: pointer;
+}
+button {
+  margin-top: 10px;
+}
+#me{
+  margin-top: 100px;
+  width: 600px;
+  transform: translateX(100px) translateY(10px);
+}
+#back{
+  position: absolute;
+  transform: translateX(200px) translateY(50px);
+  width: 400px;
+  z-index: -1;
+}
+.fa-moon{
+  cursor: pointer;
+  font-size: 2rem;
+}
   
