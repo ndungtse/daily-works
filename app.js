@@ -1,6 +1,6 @@
 
 window.onscroll = function (e) {
-    console.log(window.scrollY); // Value of scroll Y in px
+    console.log(window.scrollY); 
   }; 
   
   var loader = document.querySelector('.preloader');
@@ -20,6 +20,16 @@ window.onscroll = function (e) {
           icon.querySelector('.fa-moon');
       }
   }
+  var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
 /* 
 const menu = document.querySelector('#mobile-menu');
 const menulinks = document.querySelector('.links');
