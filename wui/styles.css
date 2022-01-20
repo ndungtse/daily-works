@@ -1,0 +1,30 @@
+div {
+    background-color: blue;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    background-color: #ccc;
+}
+h1{
+    color: rgb(0, 0, 0) !important;
+    font-size: 24px;
+    border: 5px solid yellow;
+}
+#syntax{
+    text-transform: uppercase;
+    background-color: black;
+    color: rgb(247, 28, 28);
+}
+/* .groupb{
+    font-size: 60px;
+} */
+p{
+    font-size: 300%;
+}
+#main #inside{
+    background-color: yellow;
+    height: 100px;
+    width: 300px;
+}

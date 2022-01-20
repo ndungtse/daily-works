@@ -2,6 +2,10 @@
 window.onscroll = function (e) {
     console.log(window.scrollY); 
   }; 
+
+  function mobileMenu() {
+    document.querySelector('.links').style.display= "flex"
+  }
   
   var loader = document.querySelector('.preloader');
   
