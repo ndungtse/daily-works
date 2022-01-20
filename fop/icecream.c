@@ -8,7 +8,5 @@ int main()
     printf("Do I have money to buy an icecream? %d \n", icecream_price < pocket_money);
     printf("Do I have money to buy two icecreams? %d \n", 2*icecream_price < pocket_money);
     printf("Yeah");
-    int fisrt = (icecream_price*pocket_money)+= icecream_price;
-    int second = 
     return 0;
 }

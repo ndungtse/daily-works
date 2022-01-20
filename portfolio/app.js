@@ -13,15 +13,15 @@ window.onscroll = function (e) {
     loader.style.display = "none"
   })
 
-  var icon = document.querySelector('.fa-moon');
+  var icon = document.getElementById("icon")
 
   icon.onclick = function() {
       document.body.classList.toggle("dark-theme");
       if(document.body.classList.contains("dark-theme")){
-          icon.classList.toggle("fa-sun");
+          icon.src="Images/sun.png";
       }
       else{
-          icon.querySelector('.fa-moon');
+          icon.src= "Images/moon.png";
       }
   }
   var docWidth = document.documentElement.offsetWidth;
