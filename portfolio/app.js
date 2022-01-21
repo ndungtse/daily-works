@@ -32,17 +32,23 @@ window.onscroll = function (e) {
     if (el.offsetWidth > docWidth) {
       console.log(el);
     }
+  })
+
+var chekBox = document.querySelector('#check');
+var ul = document.querySelector('.links');
+
+function mobileMenu () {
+  if (chekBox.checked == true) {
+    ul.classList.toggle('mobile');
   }
-);
-/* 
-const menu = document.querySelector('#mobile-menu');
-const menulinks = document.querySelector('.links');
-const navLogo = document.querySelector('#navbar__logo')
+  else {
+    ul.classList.remove('mobile')
+  }
+}
+chekBox.addEventListener('click', mobileMenu);
 
-//Display  mobile menu
-const mobileMenu = () => {
-    menu.classList.toggle('is-active');
-    menulinks.classList.toggle('active');
-};
-
-menu.addEventListener('click', mobileMenu); */
+function hideMenu () {
+  ul.classList.remove('mobile');
+}
+links.addEventListener('click', hideMenu);
+document.querySelector('.logo').addEventListener('click', hideMenu);
