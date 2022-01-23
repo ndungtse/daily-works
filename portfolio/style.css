@@ -59,6 +59,10 @@ nav .logo {
   width: 50px;
   border-radius: 50px;
 }
+.logo a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
 nav .logo:hover { 
   cursor: pointer;
 }
@@ -117,7 +121,7 @@ nav .links a:hover {
   .logo{
     margin-left: 30px;
   }
- ul{
+ .links{
     background: var(--secondary-color);
     position: absolute;
     right: -1000px; 
@@ -126,7 +130,7 @@ nav .links a:hover {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
-    transition: all 0.5s;
+    transition: all 0.3s;
  }
    /*  #check:checked ~ ul{
     top: 68px;    //replaced by js!!!!!!!

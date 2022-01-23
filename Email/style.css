@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+.navigation{
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bar{
+       width: 23px;
+        height:3px;
+        margin: 0.2rem ;
+        transition: all 0.3s ease-in-out;
+        background: #000000;
+        display: block;
+        cursor: pointer;
+}
+.menulogo{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-left:25px;
+    display: flex;
+    align-items: center;
+}
+.logo span{
+    margin-left:25px;
+    display: flex;
+    align-items: center;
+}
+.logo span{
+    width:15px;
+    font-size: 1.5rem;
+}
+
+.topnav{
+    border: 1px solid rgb(223, 220, 220);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;/* 
+    max-width: 1300px; */
+    margin: 0 auto/* ;
+    padding: 0 50px; */
+}
+.search{
+    display: flexbox;
+    margin-top: 18px;
+    background-color: #F6F5FF;
+    border-radius: 10px;
+    height: 45px;
+    width: 700px;
+}
+#search{
+    transform:translate(120%, 70%) ;
+}
+#slider{
+    position: relative;
+    transform: scale(1.8);
+    float: right;
+    right: 20px;
+    top: 16px;
+}
+.search input{/* /*  */
+    transform: translate(50px, 40%);
+    /* width: 700px; */
+    /* height: 45px; */
+   /*  
+    border-radius:4px;*/
+    background-color: #F6F5FF;  
+    outline: none;
+    border: none;
+}
+.icons-avatar{
+    margin-right: 20px;
+    float: left;
+    align-items: center;
+    justify-content: space-between;
+    display: flexbox;
+}
+.icon-avatar img{
+    border-radius:15px;
+ }
+.fa-question-circle{
+    transform: translate(0%, -85%);
+    font-size: 1.5rem;
+}
+#apps{
+    width: 30px;
+     transform: translate(0%, -20%);
+}
+#settings{
+    transform: translate(0%, -30%);
+}
+#hi, .hi{
+    margin: 10px;
+}
+#avatar{
+    margin-top: 15px;
+    width:50px;
+    border-radius:25px;
+}
+.main{
+    display: flex;
+    max-height: 580px;
+}
+.options{
+    border-right: 1px solid rgb(223, 220, 220);
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height:690px;
+}
+.comp-view{
+    border-bottom: 1px solid rgb(223, 220, 220);
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.compose{
+    cursor: pointer;
+    margin-left: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+   align-items: center;
+   width: 150px;
+   height: 50px;
+   justify-content: center;
+   border-radius: 30px;
+}
+.comp{
+    padding: 5px;
+}
+.comp span{
+    position: absolute;
+    transform: translate(0, 9px);
+}
+.bx-plus{
+    margin-right: 10px;
+    font-size: 3rem;
+}
+.contents{
+    height: 30%;
+}
+.opt-container{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 12px;
+}
+.element{
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.link{
+    color: black;
+    text-decoration: none;
+    margin-left: -23px;
+}
+.box{
+    background-color: black;
+    -webkit-background-clip: text;
+}
+.meet{
+    border: 1px solid rgb(223, 220, 220);
+    height: 12%;
+}
+h6{
+    margin-left: -16px;
+    font-size: 1em;
+    font-weight: 500;
+}
+.meetlist{
+    list-style: none;
+}
+.hangouts{
+    border: 1px solid rgb(223, 220, 220);
+    height: 11%;
+}
+.hangouts h6{
+    margin-top: 10px;
+    margin-left: 21px;
+}
+.hangouts img{
+    border-radius: 20px;
+}
+.elements{
+    list-style: none;
+    margin-left: 41px;
+}
+.elements span{
+    font-size: 0.8em;
+    position: absolute;
+    margin: 10px 2px;
+}
+#p2{
+    font-size: 1.7rem;
+    margin-left: 115px;
+}
+.chats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(223, 220, 220);
+    height: 28%;
+}
+.chats img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50px;
+}
+.chats a{
+    text-decoration: none;
+    color: blue;
+}
+.bx-message-rounded-dots{
+   font-size: 6rem;
+}
+.other{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.other i{
+    margin: 10px;
+}
+.inside{
+    width: 82%;
+    height:710px;
+}
+.header{
+    border-bottom: 1px solid rgb(223, 220, 220);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.one{
+    margin: 15px
+}
+.one i{
+    font-size: 1.3em;
+    margin: 7px
+}
+.lefts{
+    float: right;
+    display: flex;
+    transform: translateX(440%);
+}
+.number{
+    margin: 15px;
+}
+.number i{
+    margin: 5px;
+}
+.fa-redo-alt{
+    position: absolute;
+    font-size: 1em !important;
+    margin-top: 10px !important;
+    transform: translateX(-20px);
+}
+.firstlinks{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.primary:not(:first-child){
+    margin-left: 230px;
+}
+.prilink, .prink{
+    text-decoration: none;
+    color: black;
+}
+.prink{
+    margin-left: 10px;
+    color: brown;
+}
+.prink i{
+    font-size: 1.3em;
+}
+.span{
+    position: absolute;
+    width: 200px;
+    height:3px;
+    margin: 0.2rem ;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(6px) translateX(-3.5px);
+    background: brown;
+    display: block;
+    cursor: pointer;
+}
+.inbox{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 238, 240);
+}
+.opt-container .element:first-child .link{
+    color: brown;
+}
+.mesage{
+    border-bottom: 1px solid rgb(223, 220, 220);
+    margin-left: 5px;
+    display: flex;
+    margin-top: 8.4px;
+}
+.description{
+    margin-left: 100px;
+}
+.hour{
+    margin-left: 630px;
+}
+.sidenav{
+    border-left: 1px solid rgb(223, 220, 220);
+    display: flex;
+    flex-direction: column;
+}
+.colorico{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.colorico img{
+    margin-left: 9px;
+    width: 30px;
+}
+.cocico:not(:first-child){
+    margin-top: 30px;
+}
+#qr{
+    width: 25px;
+}
+#qt{
+    margin-left: 12px;
+    width: 20px;
+}
+.car{
+    position: absolute;
+    width: 30px;
+    height:0.7px;
+    margin: 0.2rem ;
+    transition: all 0.3s ease-in-out;
+    transform: translate(5px, 39px);
+    background: rgb(202, 201, 201);
+    display: block;
+    cursor: pointer;
+}
+#p3{
+    font-size: 2em;
+    color: black;
+    transform: translate(5px, 60px);
+}
+#p4{
+    font-size: 1.5em;
+    color: black;
+    transform: translate(5px, 260px);
+}

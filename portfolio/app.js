@@ -36,6 +36,7 @@ window.onscroll = function (e) {
 
 var chekBox = document.querySelector('#check');
 var ul = document.querySelector('.links');
+var bar = document.querySelector('.fa-bars');
 
 function mobileMenu () {
   if (chekBox.checked == true) {
@@ -44,11 +45,11 @@ function mobileMenu () {
   else {
     ul.classList.remove('mobile')
   }
-}
-chekBox.addEventListener('click', mobileMenu);
-
+}/* 
+bar.addEventListener('click', mobileMenu);
+ */
 function hideMenu () {
   ul.classList.remove('mobile');
 }
-links.addEventListener('click', hideMenu);
+document.querySelector('navlinks').addEventListener('click', hideMenu);
 document.querySelector('.logo').addEventListener('click', hideMenu);
