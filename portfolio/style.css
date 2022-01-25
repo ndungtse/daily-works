@@ -132,6 +132,17 @@ nav .links a:hover {
     margin-top: 80px;
     transition: all 0.3s;
  }
+ .links.yes{
+    background: var(--secondary-color);
+    position: absolute;
+    right: -1000px; 
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    transition: all 0.3s;
+ }
    /*  #check:checked ~ ul{
     top: 68px;    //replaced by js!!!!!!!
     right: 0;

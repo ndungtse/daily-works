@@ -6,12 +6,11 @@ window.onscroll = function (e) {
   function mobileMenu() {
     document.querySelector('.links').style.display= "flex"
   }
+  // var loader = document.querySelector('.preloader');
   
-  var loader = document.querySelector('.preloader');
-  
-  window.addEventListener("load", function() {
-    loader.style.display = "none"
-  })
+  // window.addEventListener("load", function() {
+  //   loader.style.display = "none"
+  // })
 
   var icon = document.getElementById("icon")
 
@@ -45,11 +44,11 @@ function mobileMenu () {
   else {
     ul.classList.remove('mobile')
   }
-}/* 
-bar.addEventListener('click', mobileMenu);
- */
+}
+bar.addEventListener('click', mobileMenu());
+
 function hideMenu () {
-  ul.classList.remove('mobile');
+  ul.classList.toggle('yes');
 }
 document.querySelector('navlinks').addEventListener('click', hideMenu);
 document.querySelector('.logo').addEventListener('click', hideMenu);
