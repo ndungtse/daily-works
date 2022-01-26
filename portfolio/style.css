@@ -546,3 +546,34 @@ h1{
   width: 20px;
   cursor: pointer;
 }
+.certificate{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cert-container{
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  width: 350px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  background: url(Images/Screenshot\ \(12\).png);
+  background-size:100%;
+}
+.cert-card {
+  margin-top: 100px;
+}
+.cert-btn{
+  padding: 10px;
+  background-color: #0251e4;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
