@@ -1,17 +1,11 @@
 
-window.onscroll = function (e) {
+/* window.onscroll = function (e) {
     console.log(window.scrollY); 
   }; 
-
+ */
   function mobileMenu() {
     document.querySelector('.links').style.display= "flex"
   }
-  // var loader = document.querySelector('.preloader');
-  
-  // window.addEventListener("load", function() {
-  //   loader.style.display = "none"
-  // })
-
   var icon = document.getElementById("icon")
 
   icon.onclick = function() {

@@ -564,7 +564,11 @@ h1{
   height: 500px;
   align-items: center;
   justify-content: center;
-  background: url(Images/Screenshot\ \(12\).png);
+  background: url(Images/Screenshot.png);
+  background-size:100%;
+}
+.cert-container:nth-child(2){
+  background: url(Images/Screenshot1.png);
   background-size:100%;
 }
 .cert-card {
