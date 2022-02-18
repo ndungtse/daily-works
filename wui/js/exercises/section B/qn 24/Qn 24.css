@@ -1,0 +1,7 @@
+img{
+    width: 266px;
+    height: 150px;
+}
+#images img{
+    cursor: pointer;
+}

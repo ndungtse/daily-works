@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queation 25</title>
+    <style>
+        table {
+            margin-top: 40px;
+        }
+
+        td {
+            width: 100px;
+            height: 30px;
+            border-collapse: collapse;
+            border: 1px solid #0000;
+        }
+
+
+        #row::-webkit-outer-spin-button,
+        #row::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        #column::-webkit-outer-spin-button,
+        #column::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* mozila */
+        #row,
+        #column {
+            -moz-appearance: textfield;
+        }
+
+        table,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 120px;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Create a desired table</h1>
+    <input id="column" type="number" placeholder="input number of columns">
+    <input id="row" type="number" placeholder="input number of rows">
+    <table id="created"></table>
+    <button onclick="createTable()">Create a Table</button>
+    <p id="myp"></p>
+    <script src="que25.js"></script>
+</body>
+
+</html>

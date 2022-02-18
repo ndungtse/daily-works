@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="gradeCal.css" type="text/css">
+    <script src="gradeCal.js"></script>
+</head>
+
+<body>
+    <h1>Grade Calculator!</h1>
+    <div id="assignments">
+        <div id="hw">
+            HW1<input type="text" class="earned" size="2"> /
+            <input type="text" class="max" size="2">
+        </div>
+        <br>
+        <div id="hw">
+            HW2<input type="text" class="earned" size="2"> /
+            <input type="text" class="max" size="2">
+        </div>
+        <br>
+        <div id="hw">
+            HW3<input type="text" class="earned" size="2"> /
+            <input type="text" class="max" size="2">
+        </div>
+        <br>
+    </div>
+    <span onclick="add()">Add another row.</span>
+    <br><br>
+    <div>
+        <label for="curve"><input type="checkbox" id="curve">Curve +5 ?</label>
+    </div>
+    <br>
+    <div id="resultsarea">
+        <button id="compute" onclick="compute()">Compute!</button>&ensp;
+        <button id="clear" onclick="clearAll()">Clear!</button>
+        <br>
+        <br>
+        <div id="results"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+span {
+    border: 1px red dotted;
+    color: red;
+    margin: 0px 15px;
+    font-size: 20px;
+    background-color: rgb(247, 207, 207);
+}

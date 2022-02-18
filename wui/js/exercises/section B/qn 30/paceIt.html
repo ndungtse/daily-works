@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pace it</title>
+    <link rel="stylesheet" href="paceIt.css" type="text/css">
+</head>
+
+<body>
+    <h1>Pace-It!</h1>
+    <fieldset>
+        <legend>Calculate pace chart:</legend>
+        <div class="distance">
+            <label for="distance">Distance</label>
+            <br>
+            <input type="text" id="distance">mi
+        </div>
+        <div class="target">
+            <label for="target_pace">Target Pace</label>
+            <br>
+            <input type="text" id="target_pace">min/mi
+            <br>
+            <span>(mm:ss)</span>
+        </div>
+        <div><button id="calculate" onclick="calculator()">Calculate</button></div>
+    </fieldset>
+    <table id="pace_chart" cellspacing="0" border="1" width="20%">
+        <tr id="header_row">
+            <th class="mile">Mile</th>
+            <th class="time">Time</th>
+        </tr>
+    </table>
+    <script src="paceIt.js" type="text/javascript"></script>
+</body>
+
+</html>

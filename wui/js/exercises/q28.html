@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image</title>
+    <style>
+        .m{
+            height: 300;
+            width: 500px;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Choose random Image</button>
+    <div class="m">
+      <img id="random" src="https://resources.premierleague.com/photos/2021/08/10/331e43df-4467-4795-82ba-255aa6ee2fce/03930_PP_Generic_Mens_Promo-Header_530x400.jpg?width=500&height=333" alt="">
+    </div>
+    <script>
+        let btn = document.querySelector('.btn')
+        let cont = document.querySelector('.m')
+        let img = document.querySelector('#random');
+        let imgsrc = ['https://resources.premierleague.com/photos/2021/08/10/331e43df-4467-4795-82ba-255aa6ee2fce/03930_PP_Generic_Mens_Promo-Header_530x400.jpg?width=500&height=333',
+             'https://static.standard.co.uk/2022/02/11/22/PRI222914994.jpg?crop=3%3A2%2Csmart&width=640&auto=webp&quality=75',
+               'https://i.guim.co.uk/img/media/5806c36c5d64098ed7db50ad1f7fffdb5512d1f0/0_0_2989_1794/master/2989.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=ac7dcca6aa942df90329e9cf42b2720b',
+            'https://i2-prod.manchestereveningnews.co.uk/incoming/article21483958.ece/ALTERNATES/s1200c/1_city-chelsea.jpg',
+            'https://phantom-marca.unidadeditorial.es/0ae8de44bf5e5fda5d0ef6cce584f3b6/resize/1320/f/jpg/assets/multimedia/imagenes/2021/10/23/16349998863412.jpg'];
+            
+        function randomImg() {
+            let x = imgsrc.length;
+        let imgindex = Math.floor(Math.random()*x);
+        console.log(imgindex);
+        img.setAttribute("src", imgsrc[imgindex]);
+            
+        }
+        btn.addEventListener("click", randomImg)
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito&family=Open+Sans&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background-color: #7b83af;}
+.main{
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+ .div{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: #fafafa;
+     border-radius: 10px;
+     padding: 5px 30px;
+     color: rgb(30, 30, 31);
+ }
+ .cont{
+     display: flex;
+     flex-direction: column;
+ }
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+
+ }
+  input{
+      width: 250px;
+      height: 35px;
+      outline: none;
+      border: 1px solid rgb(239, 241, 247);box-shadow:  inset 2px 2px 5px #c9d1ec, inset -5px -5px 10px #FFF;
+      border-radius: 5px;
+      background: transparent;
+  }
+  input:focus{
+      box-shadow: 0px 0px 0px 2px rgb(0, 0, 255);
+      box-shadow:  inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+  }
+ .div div {
+     margin-top: 20px;
+     
+ }
+ button {
+     width: 100px;
+     height: 30px;
+     border: none;
+     border-radius: 3px;
+     background-color: #00f;
+     color: #fff;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+ button:hover{
+     transform: scale(1.05);
+ }
+@media screen and (max-width: 1000px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+}
+@media screen and (max-width: 675px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+.place{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    background-color: #7b83af;
+    padding: 5px 10px;
+}
+.footer{
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+.social{
+    margin-left: 20px;
+}
+.bx{
+    transition: 0.3s;
+}
+.bx:hover{
+    cursor: pointer;
+    color: #00f;
+    transform: scale(1.2);
+}
+@media screen and (max-width: 440px) {
+    .footer{
+        text-align: center;
+        flex-direction: column;
+    }
+}

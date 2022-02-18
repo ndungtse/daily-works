@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEntence reverser</title>
+    <style>
+        .main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main div {
+            margin-top: 20px;
+        }
+
+        .square {
+            display: flex;
+            width: 100%;
+        }
+
+        span {
+            padding: 5px 10px;
+            background-color: rgba(247, 16, 16, 0.267);
+            margin-left: 10px;
+            border: 2px dotted red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Sentence Reverser</h1>
+        <div><label for="phrase">Phrase</label>
+            <input type="text" id="phrase" name="phrase" value="Hello Word">
+        </div>
+        <div>
+            <label for="filter" id="filter">Filter</label>
+            <input type="text" id="filt" name="filter" value="Word">
+        </div>
+        <div><button onclick="sentReverser()">Go</button></div>
+        <p id="text"></p>
+        <div class="square"></div>
+    </div>
+</body>
+<script>
+    function sentReverser() {
+        var wordIn = document.querySelector('#phrase').value.split(' ');
+        var ptag = document.querySelector('#text')
+        var newword = []
+        let filt = String(document.querySelector('#filt').value)
+        for (var i = wordIn.length - 1; i >= 0; i--) {
+            newword.push(wordIn[i])
+        }
+
+        let word = ''
+        for (var i = 0; i < newword.length; i++) {
+            var word1 = document.createTextNode(" " + newword[i]);
+            let pcont = document.createElement("span");
+            pcont.appendChild(word1)
+            if(word1 === filt){
+               ptag.removeChild(word1)
+             }
+             else{
+                 ptag.appendChild(pcont)
+             } 
+        }
+ 
+    }
+    let btn = document.getElementsByTagName("button")
+    function remoChild(){
+       
+        if(word1 === filt){
+               ptag.removeChild(pcont)
+             }
+             else{
+                 ptag.appendChild(pcont)
+             } 
+    }
+    btn.addEventListener('click', remoChild)
+</script>
+
+</html>
