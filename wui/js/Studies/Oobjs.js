@@ -27,12 +27,3 @@ Person.prototype.bio = function () {
 }
 let Charles = new Person("Ndungutse", "Charles", 16, "male", "football");
 console.log(Charles.bio() );
-class Teacher extends Person {
- constructor(subject, grade) {
-   super(first, last, age, gender, interests);
- this.subject = subject;
- this.grade = grade;
- }
-}
-let tec = new Teacher("football",'java', 'java');
-console.log( tec.grade)
