@@ -17,8 +17,9 @@ int main()
         for (int j = 0; j < 3; j++)
         {
             printf(" element two_d[%d][%d]=%d", i,j,two_d[i][j]);
+             printf("\n");
         }
-        printf("\n");
+       
     }
     
   return 0;

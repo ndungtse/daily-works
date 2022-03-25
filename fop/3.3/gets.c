@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main(){
-    char name[26];
+    char name[]="";
     // char answer[26]="charles";
     printf("Enter your name: ");
     gets(name);
-    if (name=="charles")
+    if (name =="charles")
     {
         printf("Hello my owner");
         printf("Hi ");
