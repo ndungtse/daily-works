@@ -7,10 +7,15 @@ void main()
 
     for (z = 10; z > 0; z++)
     {
-       
+
         printf("Please input a number: ");
         scanf("%d", &number);
-        if (number >= 1 && number <= 10000000000000)
+        if (number % 2 != 0 || number <= 0)
+        {
+            printf("Thank you for using this program.");
+            exit(0);
+        }
+        else
         {
 
             for (i = 0; i < number; i++)
@@ -26,10 +31,6 @@ void main()
 
                 printf("\n");
             }
-        }
-        else
-        {
-            exit(0);
         }
     }
 }

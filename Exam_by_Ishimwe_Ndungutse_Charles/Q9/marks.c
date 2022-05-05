@@ -9,7 +9,7 @@ void main()
     int studentId, subjects, total;
     double marks, sum = 0, percentage;
 
-    printf("==================== input ========================");
+    printf("==================== input ========================\n");
 
     printf("Input a student code: ");
 
@@ -24,7 +24,7 @@ void main()
     scanf("%d", &subjects);
 
     total = 100 * subjects;
-    
+
     for (int i = 1; i <= subjects; i++)
     {
         printf("Enter Subject %d marks /100 : ", i);

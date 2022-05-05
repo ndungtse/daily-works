@@ -11,9 +11,6 @@ int string_length(char str[])
 
 void main(){
     char word[100], newword[100]="";
-
-
-
     printf("WELCOME TO STRING REVERSER!\n");
     printf("____________________________________\n");
     printf("Enter any word to reverse: ");
