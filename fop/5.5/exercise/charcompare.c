@@ -11,7 +11,9 @@ int main()
     char buffer[1201];
     FILE *instream;
     char c;
+    char holder[100]="";
     int nOfNames;
+    int counter = 0;
 
     printf("input the name of your text file including its format: ");
     gets(fname);
@@ -53,12 +55,18 @@ int main()
 
     while (fgets(buffer, sizeof(buffer) - 1, instream) != NULL)
     {
-        if (!strncmp(buffer, prevline, 4))
-            printf("%s and %s have the same first 4 characters", prevline, buffer);
-
+        if (!strncmp(buffer, prevline, 4)){
+            counter+=2;
+            for (int i = 0; i < strlen(buffer); i++)
+            {
+                holder[i]=buffer[i];
+            }
+            }
+            // printf("%.4s: %d", prevline, counter);
         strcpy(prevline, buffer);
     }
     fclose(instream);
+    printf("%.4s: %d", holder, counter);
 
     return 0;
 }

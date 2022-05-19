@@ -1,30 +1,97 @@
-div {
-    background-color: blue;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color: #ccc;
+.fa-caret-down{
+    margin-left: 10px;
 }
-h1{
-    color: rgb(0, 0, 0) !important;
-    font-size: 24px;
-    border: 5px solid yellow;
+.navbar{
+    width: 100%;
+    display: flex;
+    padding: 0 10%;
+    background-color: rgb(98, 141, 234);
+    height: 10vh;
+    align-items: center;
+    font-size: 1.2em;
 }
-#syntax{
-    text-transform: uppercase;
-    background-color: black;
-    color: rgb(247, 28, 28);
+.content{
+    display: flex;
+    list-style: none;
+    /* width: 50%; */
+    margin: 0 auto;
 }
-/* .groupb{
-    font-size: 60px;
-} */
-p{
-    font-size: 300%;
+.content li{
+    margin-left: 10px;
+    /* width: 400px; */
+    display: flex;
+    transition: all 0.4s;
+    cursor: pointer;
+    justify-content: center;
+    padding: 0.5em 1em;
 }
-#main #inside{
-    background-color: yellow;
-    height: 100px;
-    width: 300px;
+.content li:hover{
+    background-color: rgb(65, 116, 243);
+}
+.dropdown{
+    position: absolute;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    transform: translateY(30px);
+    background-color: rgb(98, 141, 234);
+    /* padding: 0 20px; */
+}
+.dropdown li:first-child{
+    margin-top: 30px;
+}
+.dropdown li{
+    padding: 0.5em 1em;
+    /* width: 100%; */
+    text-decoration: none;
+}
+.content li:hover .dropdown{
+    display: flex;
+}
+.dropdown li:hover{
+    background-color: rgb(82, 129, 240);
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.dropdown2{
+    position: absolute;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    left: 100%;
+    top: 10%;
+    background-color: rgb(98, 141, 234);
+}
+.dropdown3{
+    position: absolute;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    left: 100%;
+    top: 10%;
+    background-color: rgb(98, 141, 234);
+}
+
+.dropdown li:hover .dropdown2{
+    display: block;
+}
+.dropdown2 li:hover .dropdown3{
+    display: block;
+}
+ul{
+    list-style: none;
+}
+.dropdown{
+    list-style: none;
+}
+.dropdown2 li{
+    margin-top: 0;
+    transform: translateY(-20px);
 }

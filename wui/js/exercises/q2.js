@@ -1,7 +1,8 @@
 
 function findPalidrome (wordIn) {
   var newword = ''
-  for (var i = wordIn.length - 1; i >= 0; i--){
+  var arr = wordIn.split(' ').join(' ')
+  for (var i = arr.length - 1; i >= 0; i--){
     newword += wordIn[i]
     var reversed = newword.toString()
 
@@ -15,4 +16,4 @@ function findPalidrome (wordIn) {
 }
 
 
-console.log(findPalidrome("madamadam"));
+console.log(findPalidrome("madm"));
