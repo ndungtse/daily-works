@@ -5,6 +5,7 @@ void main()
     int i, j, k, z;
     int number;
 
+
     for (z = 10; z > 0; z++)
     {
 

@@ -7,7 +7,7 @@ union abc
 } var;
 
 int main(){
-    var.a =65;
+    var.a =64;
     printf("a=%d\n", var.a);
     printf("b=%c\n", var.b);
     printf("Size is: %ld", sizeof(union abc));
