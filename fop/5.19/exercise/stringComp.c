@@ -14,6 +14,7 @@ int main()
     char holder[100]="";
     int nOfNames;
     int counter = 0;
+    int helper = 0;
 
     printf("input the name of your text file including its format: ");
     gets(fname);
@@ -56,13 +57,17 @@ int main()
     while (fgets(buffer, sizeof(buffer) - 1, instream) != NULL)
     {
         if (!strncmp(buffer, prevline, 4)){
-            counter+=2;
+            if (helper==0){
+                counter+=2;
+                helper++;
+            }else{
+                counter++;
+            }
             for (int i = 0; i < strlen(buffer); i++)
             {
                 holder[i]=buffer[i];
             }
             }
-            // printf("%.4s: %d", prevline, counter);
         strcpy(prevline, buffer);
     }
     fclose(instream);
