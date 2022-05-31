@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+}
+.head{
+    font-size: 0.8em;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 3em;
+    border-bottom: 3px solid black;
+}
+table{
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+td{
+    /* border-bottom: 1px solid black; */
+    padding: 2em 0.8em
+}
+td:not(:first-child){
+    border-bottom: 2px solid black;
+}
+.img{
+    width: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0.2em 0.2em #c0c0c05a;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.desc{
+    width: 200px;
+}
+.p1{
+    margin-top: 10px;
+}
+.quant{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quant button{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    color: rgb(23, 109, 195);
+    font-weight: bold;
+    margin: 0 1em;
+    border: 1px solid rgb(23, 109, 195);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.color-box{
+    width: 100px;
+    height: 20px;
+    margin-left: 10px;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+.price{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.bx-x{
+    color: red;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.t1{
+    width: 200px;
+}
+.checkout{
+    display: flex;
+    margin-top: 20px;
+    padding: 2em 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkout a{
+    color: black;
+}
+.cbtn{
+    padding: 0.7em 2.5em;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #9ac0da;
+}
+select{
+    -webkit-appearance: none;
+    outline: none;
+}
