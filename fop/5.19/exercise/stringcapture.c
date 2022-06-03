@@ -31,7 +31,7 @@ void main(){
     scanf("%d", &n);
     struct names arr[n];
     int sizeof_arr = 0;
-
+        
     FILE *file = fopen("test.txt", "w");
     for(int i = 0; i < n; i++){
         printf("> ");
