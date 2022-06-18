@@ -1,0 +1,20 @@
+{
+  "name": "vue-cli-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --port 300",
+    "build": "vue-cli-service build",
+    "server": "json-server --watch db.json --port 500"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "json-server": "^0.17.0",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-service": "~5.0.0"
+  }
+}
