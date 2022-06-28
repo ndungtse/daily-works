@@ -6,4 +6,4 @@ for(let i = 1; i <= num; i++) {
     }
 }
 }
-console.log(positiveFactors(12));
+positiveFactors(12);

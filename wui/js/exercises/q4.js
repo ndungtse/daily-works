@@ -8,7 +8,7 @@ function alphabetOrder(stringPass) {
       }
     }
   }
-  }
+  
   return "By arranging " + stringPass + " on alphabetical order, we get " + arrangedAlphabet;
 }
 console.log(alphabetOrder("alphabets"));
