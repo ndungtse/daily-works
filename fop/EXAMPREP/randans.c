@@ -15,6 +15,5 @@ void main(){
     {
         printf("Enter name %d: ", i);
         scanf("%[^\n]%*c", names[i]);
-    }
-    
+    };
 }
