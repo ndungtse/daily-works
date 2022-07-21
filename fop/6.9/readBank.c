@@ -20,10 +20,8 @@ int main()
    struct Person p1;
    FILE *fptr;
 
-   if ((fptr = fopen("D:\\program.bin","rb")) == NULL){
+   if ((fptr = fopen("program.bin","rb")) == NULL){
        printf("Error! opening file");
-
-       // Program exits if the file pointer returns NULL.
        exit(1);
    }
 

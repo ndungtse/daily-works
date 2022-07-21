@@ -25,7 +25,6 @@ int main()
         printf(" Error in opening file!");
         exit(1);
     }
-
     printf("input the number of names you want to enter: ");
     scanf("%d", &nOfNames);
 
@@ -71,7 +70,7 @@ int main()
         strcpy(prevline, buffer);
     }
     fclose(instream);
-    printf("%.4s: %d", holder, counter);
+    printf("%.4s: %d\n", holder, counter);
 
     return 0;
 }

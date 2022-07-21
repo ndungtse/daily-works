@@ -28,5 +28,6 @@ int main() {
         cout << "The answer is: " << firstNum / secondNum;
         break;
     }
+    cout << endl;
     return 0;
 }
