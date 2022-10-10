@@ -11,7 +11,7 @@ public class App {
             System.out.println("Enter the first number: ");
             double num1 = scanner.nextDouble();
 
-            System.out.println("Enter the fsecond number: ");
+            System.out.println("Enter the second number: ");
             double num2 = scanner.nextDouble();
 
             System.out.println("The requested action is: "+ num1+operation+num2+"\n"
