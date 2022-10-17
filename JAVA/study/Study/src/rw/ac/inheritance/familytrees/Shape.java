@@ -1,4 +1,4 @@
-package com.inheritance.familytrees;
+package rw.ac.inheritance.familytrees;
 
 public class Shape {
     private double area;
