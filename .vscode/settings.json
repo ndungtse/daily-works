@@ -47,5 +47,6 @@
 		"xstddef": "cpp",
 		"xtr1common": "cpp",
 		"xutility": "cpp"
-	}
+	},
+	"java.project.sourcePaths": ["JAVA\\study\\Shape", "JAVA\\study\\Shape\\src"]
 }
