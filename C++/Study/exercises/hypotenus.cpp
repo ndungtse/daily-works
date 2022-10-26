@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
         {
             if ((int)(sqrt(pow(i, 2) + pow(j, 2))) == (float)(sqrt(pow(i, 2) + pow(j, 2))))
             {
-                cout << "i: " << i << " j: " << j << " c: " << calcHypotenus(i,j) << endl;
+                cout << "("<<i<<" , "<<j<<+")" << endl;
             }
         }
 

@@ -45,12 +45,18 @@ public class MainApp {
 //		square.squareType();
 		
 		//instanceof is to avoid class cast exception
-		if(shape instanceof Square) {
-			Square square = (Square) shape;  //Down casting
-			square.squareType();
-		} else {
+		// if(shape instanceof Square) {
+			try {
+				Square square = (Square) shape; // Down casting
+				square.squareType();
+			} catch (Exception e) {
+				// e.setStackTrace(null);
+				e.printStackTrace();
+				// System.out.println();
+			}
+		// } else {
 			//Prints the casted class in case not real class passed
-			shape.noRealTypeShapeSpecified(shape.getClass());
-		}
+			// shape.noRealTypeShapeSpecified(shape.getClass());
+		// }
 	}
 }
