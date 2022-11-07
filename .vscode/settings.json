@@ -49,5 +49,6 @@
 		"xutility": "cpp"
 	},
 	"java.project.sourcePaths": ["JAVA\\study\\Shape", "JAVA\\study\\Shape\\src"],
-	"cmake.configureOnOpen": false
+	"cmake.configureOnOpen": false,
+	"cmake.sourceDirectory": "${workspaceFolder}/C++/Study"
 }
