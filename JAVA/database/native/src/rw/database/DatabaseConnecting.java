@@ -5,24 +5,28 @@ import java.sql.*;
 public class DatabaseConnecting {
     public static void main(String[] args) throws Exception {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/rwanda";
             String username = "root";
             String password = "chazard10.3";
-            String query = "select * from villages";
+
+            String query = "select * from cells";
+            Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection(url, username, password);
 
             System.out.println("Connection established");
 
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query);
+//            Array myArray = rs.
+            while (rs.next()){
+                String name = rs.getString("cellName");
+                System.out.println(name);
+            }
 
-            String name = rs.getString("villageName");
 
-            System.out.println(name);
             st.close();
             conn.close();
-            System.out.println("Connection Claosed...");
+            System.out.println("Connection Closed...");
         } catch (
 
         Exception ex) {
