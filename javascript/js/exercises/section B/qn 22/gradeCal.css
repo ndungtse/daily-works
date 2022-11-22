@@ -1,0 +1,19 @@
+.pass {
+    background-color: #cfc;
+    font-weight: bold;
+}
+
+.fail {
+    background-color: #fcc;
+    font-style: italic;
+}
+
+span {
+    color: blue;
+    text-decoration: underline blue;
+}
+
+span:hover {
+    color: red;
+    cursor: pointer;
+}

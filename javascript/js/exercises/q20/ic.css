@@ -1,0 +1,13 @@
+.word{
+    border: 1px dotted red;
+    margin: 3px;
+    color: red;
+    padding: 4px;
+}
+.word:nth-child(odd){
+    text-decoration: underline;
+}
+div,h3{
+    margin: 4px 12px;
+    padding: 12px;
+}

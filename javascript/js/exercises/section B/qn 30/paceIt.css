@@ -1,0 +1,50 @@
+h1 {
+    margin-left: 200px;
+}
+
+fieldset {
+    width: 20%;
+    margin-left: 100px;
+    text-align: left;
+    padding: 35px;
+}
+
+legend {
+    text-align: left;
+}
+
+.distance {
+    float: left;
+}
+
+.target {
+    float: right;
+}
+
+input {
+    width: 80px;
+}
+
+#calculate {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+#pace_chart {
+    margin-left: 120px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.mile,
+.time {
+    text-align: center;
+}
+
+.mile {
+    padding: 5px 30px;
+}
+
+.time {
+    padding: 5px 52px;
+}

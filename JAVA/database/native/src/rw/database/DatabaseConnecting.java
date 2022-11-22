@@ -7,7 +7,7 @@ public class DatabaseConnecting {
         try {
             String url = "jdbc:mysql://localhost:3306/rwanda";
             String username = "root";
-            String password = "chazard10.3";
+            String password = "";
 
             String query = "select * from cells";
             Class.forName("com.mysql.jdbc.Driver");

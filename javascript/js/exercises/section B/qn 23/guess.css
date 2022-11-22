@@ -1,0 +1,9 @@
+li.low {
+    color: blue;
+    font-style: italic;
+}
+
+li.high {
+    color: red;
+    font-weight: bold;
+}
