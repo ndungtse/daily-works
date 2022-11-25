@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
     {
 
         // cout << arr[i] << endl;
-        for (int j = 0; j < i; j++)
+        for (int j = 0; j < i+1; j++)
         {
             cout << arr[i] << " " << arr[j] << endl;
             if (arr[i] < arr[j])
