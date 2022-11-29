@@ -157,7 +157,7 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>4.3.1.Final</version>
+			
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -252,4 +252,21 @@
 		<name>Rwanda Coding Academy</name>
 		<url>https://www.rca.ac.rw</url>
 	</organization>
+
+
+	<dependencyManagement>
+	
+
+		<dependencies>
+		
+
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>4.3.7.Final</version>
+			</dependency>
+
+		</dependencies>
+
+	</dependencyManagement>
 </project>
