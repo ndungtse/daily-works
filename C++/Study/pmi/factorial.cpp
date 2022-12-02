@@ -10,6 +10,7 @@ int factorial(int n)
 int main(int argc, char const *argv[])
 {
     int fact = factorial(5);
-    cout << "Sum of first 5 numbers is " << fact << endl;
+    //5*4*3*2*1*
+    cout << "Factorial 5 numbers is " << fact << endl;
     return 0;
 }
