@@ -3,7 +3,8 @@
 		"iostream": "cpp",
 		"initializer_list": "cpp",
 		"array": "cpp",
-		"string_view": "cpp"
+		"string_view": "cpp",
+		"ostream": "cpp"
 	},
 	"cmake.configureOnOpen": false
 }
