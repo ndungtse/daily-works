@@ -17,7 +17,9 @@ public class DatabaseConnecting {
 
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query);
-//            Array myArray = rs.
+
+        //    Array myArray = 
+            boolean isEqual = username.equals("root")
             while (rs.next()){
                 String name = rs.getString("cellName");
                 System.out.println(name);
