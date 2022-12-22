@@ -4,7 +4,8 @@
 		"initializer_list": "cpp",
 		"array": "cpp",
 		"string_view": "cpp",
-		"ostream": "cpp"
+		"ostream": "cpp",
+		"xstring": "cpp"
 	},
 	"cmake.configureOnOpen": false
 }

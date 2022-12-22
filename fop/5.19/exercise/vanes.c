@@ -7,6 +7,7 @@ struct student{
     int role_number;
     float marks;
 }one,two, three;
+
 int main(){
         strcpy(one.name, "Mahoro Peace");
         one.age = 17;
