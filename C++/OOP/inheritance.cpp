@@ -36,7 +36,8 @@ public:
     {
         cout << "My name is " << Name << " and I'm " << Age << "Years old" << endl;
     };
-    static void random(){
+    static void random()
+    {
         cout << "This is my random static method" << endl;
     }
 };
@@ -53,6 +54,21 @@ public:
     string Section;
 };
 
+class Teacher : Person
+{
+public:
+    string Subject;
+    Teacher(string name, int age, string subject) : Person(name)
+    {
+        Subject = subject;
+        Age = age;
+    };
+    void PrepareLesson()
+    {
+        cout << Name << " is preparing " << Subject << endl;
+    }
+};
+
 main(int argc, char const *argv[])
 {
     Student st1;
@@ -64,25 +80,11 @@ main(int argc, char const *argv[])
     // st2.intro();
     st3.intro();
 
-    //accessing static methods
+    Teacher t1("Damascene10", 35, "DSA");
+    t1.PrepareLesson();
+
+    // accessing static methods
     Person::random();
     Student::random();
     return 0;
 }
-
-// class inheritance
-// {
-// private:
-//     /* data */
-// public:
-//     inheritance(/* args */);
-//     ~inheritance();
-// };
-
-// inheritance::inheritance(/* args */)
-// {
-// }
-
-// inheritance::~inheritance()
-// {
-// }

@@ -23,5 +23,4 @@ public class Square extends Shape {
     public void setSide(float side) {
         this.side = side;
     }
-
 }
