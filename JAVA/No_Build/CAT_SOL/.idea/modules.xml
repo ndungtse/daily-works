@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/CAT_SOL.iml" filepath="$PROJECT_DIR$/.idea/CAT_SOL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CAT_SOL.iml" filepath="$PROJECT_DIR$/CAT_SOL.iml" />
     </modules>
   </component>
 </project>
