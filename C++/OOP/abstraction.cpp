@@ -6,7 +6,6 @@ class AbstractEmployee
     // make it virtual in order to be obligatory
     virtual void askForProm() = 0;
 };
-
 class Employee : AbstractEmployee
 {
 private:
