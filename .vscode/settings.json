@@ -1,11 +1,14 @@
 {
 	"files.associations": {
+		"*.tsx": "typescriptreact",
+		"*.ts": "typescript",
 		"iostream": "cpp",
 		"initializer_list": "cpp",
 		"array": "cpp",
 		"string_view": "cpp",
 		"ostream": "cpp",
-		"xstring": "cpp"
+		"xstring": "cpp",
+		"iosfwd": "cpp"
 	},
 	"cmake.configureOnOpen": false
 }

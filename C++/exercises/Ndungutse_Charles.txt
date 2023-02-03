@@ -84,7 +84,7 @@ int main(int argc, char const *argv[])
     Student students[100];
     Student st1;
     cout << "Enter Student name: ";
-    cin >> st1.name;
+    getline(cin, st1.name);
     cout << "Enter Student age: ";
     cin >> st1.age;
     while (st1.age > 30 || st1.age < 10)
@@ -100,6 +100,55 @@ int main(int argc, char const *argv[])
         cout << "Invalid roll number. Enter a Postive Number: ";
         cin >> st1.rollNumber;
     }
+    bool isUnique = false;
+
+    while (!isUnique)
+    {
+        isUnique = true;
+        ifstream studFile;
+        int count = 0;
+        int i = 0;
+        int sti = 0;
+        studFile.open("studInfo.txt");
+        string line;
+
+        // copy marks to marks array and student students array from a file
+        while (getline(studFile, line))
+        {
+            // copy student
+            if (count == 0)
+            {
+                students[sti].name = line;
+            }
+            else if (count == 1)
+            {
+                students[sti].age = stoi(line);
+            }
+            else if (count == 2)
+            {
+                students[sti].rollNumber = stoi(line);
+            }
+            else if (count == 3)
+            {
+                students[sti].marks = stof(line);
+                count = -1;
+                sti++;
+            }
+            count++;
+        }
+
+        for (int j = 0; j < sti; j++)
+        {
+            if (students[j].rollNumber == st1.rollNumber)
+            {
+                isUnique = false;
+                cout << "Roll number already exists. Enter again: ";
+                cin >> st1.rollNumber;
+                break;
+            }
+        }
+    }
+
     cout << "Enter Student marks: ";
     cin >> st1.marks;
     while (st1.marks > 50 || st1.marks < 0)
@@ -123,7 +172,7 @@ int main(int argc, char const *argv[])
     studFile.open("studInfo.txt");
     string line;
 
-    // copy marks to marks array and student students array from a file 
+    // copy marks to marks array and student students array from a file
     while (getline(studFile, line))
     {
         // copy student
@@ -144,15 +193,17 @@ int main(int argc, char const *argv[])
             students[sti].marks = stof(line);
             count = -1;
             sti++;
-        } 
+        }
         count++;
     }
 
     // sort students array
-    mergeSort(students, 0, sti - 1);
+    mergeSort(students, 0, sti);
 
     // copy marks to marks array
-    for (int j = sti; j >0 ; j--)
+    cout << endl
+         << "Students Info after Sorting according to marks: \n" << endl;
+    for (int j = sti; j > 0; j--)
     {
         printStudent(students[j]);
         cout << endl;
