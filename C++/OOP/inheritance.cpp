@@ -34,7 +34,7 @@ public:
     };
     void intro()
     {
-        cout << "My name is " << Name << " and I'm " << Age << "Years old" << endl;
+        cout << "My name is " << Name << " and I'm " << Age << " Years old" << endl;
     };
     static void random()
     {
@@ -46,12 +46,21 @@ class Student : public Person
 {
 public:
     string Level;
+    Student(string name, int age, string level) : Person(name)
+    {
+        Level = level;
+        Age = age;
+    };
 };
 
 class AdvancedStudent : public Student
 {
 public:
     string Section;
+    AdvancedStudent(string name, int age, string level, string section) : Student(name, age, level)
+    {
+        Section = section;
+    };
 };
 
 class Teacher : Person
@@ -71,13 +80,13 @@ public:
 
 main(int argc, char const *argv[])
 {
-    Student st1;
+    Student st1("Eduard", 21, "Advanced");
     Person p1("Charles", "Male", "Unknown", 17);
-    // Student st2 =  (Student) p1;
+    Student* st2 = new Student("Damascene", 17, "Advanced");
 
-    AdvancedStudent st3;
+    AdvancedStudent st3("Damascene", 17, "Advanced", "A");
     st1.intro();
-    // st2.intro();
+    st2->intro();
     st3.intro();
 
     Teacher t1("Damascene10", 35, "DSA");

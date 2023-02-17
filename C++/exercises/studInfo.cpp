@@ -25,7 +25,9 @@ void merge(Student arr[], int l, int m, int r)
     const int n1 = m - l + 1;
     const int n2 = r - m;
 
-    Student L[n1], R[n2];
+    // create temp student array
+    Student *L = new Student[n1];
+    Student *R = new Student[n2];
 
     for (i = 0; i < n1; i++)
         L[i] = arr[l + i];
@@ -63,6 +65,9 @@ void merge(Student arr[], int l, int m, int r)
         j++;
         k++;
     }
+
+    delete[] L;
+    delete[] R;
 }
 
 void mergeSort(Student arr[], int l, int r)
