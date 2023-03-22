@@ -17,9 +17,7 @@ public class DatabaseConnecting {
 
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query);
-
-        //    Array myArray = 
-            boolean isEqual = username.equals("root")
+            // boolean isEqual = username.equals("root");
             while (rs.next()){
                 String name = rs.getString("cellName");
                 System.out.println(name);
@@ -29,9 +27,7 @@ public class DatabaseConnecting {
             st.close();
             conn.close();
             System.out.println("Connection Closed...");
-        } catch (
-
-        Exception ex) {
+        } catch (Exception ex) {
             System.out.println(ex);
         }
 

@@ -1,5 +1,7 @@
 package rw.rca;
 
+import java.util.Random;
+
 public class StringCompare {
     public static void main(String[] args) {
         String s1 = new String("Hello");
@@ -12,5 +14,7 @@ public class StringCompare {
         System.out.println("s1.equals(s3): " + s1.equals(s3));
         System.out.println("s1.equals(s2): " + s1.equals(s2));
         System.out.println("s1.equalsIgnoreCase(s3): " + s1.equalsIgnoreCase(s3));
+        Random random = new Random();
+        System.out.println(random.nextInt(100));
     }
 }
