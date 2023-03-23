@@ -37,9 +37,11 @@ int main(int argc, char const *argv[])
     Employee emp1 = Employee("Charles", "Catholic");
     Employee emp2;
     Employee emp3("Audrey", "Adventist", "CaRiDev", 16);
+    Employee emp4(emp1);
     emp2.Name = "Sabrina";
     emp1.sayHello();
     cout << emp2.Name << endl;
+    cout << emp4.Religion << endl;
 
     // setter and getters
     emp1.setAge(17);

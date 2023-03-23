@@ -1,34 +1,47 @@
 #include <iostream>
 using namespace std;
-
-int main(int argc, char const *argv[])
+int main()
 {
-    int i,j, n=4, temp;
-    int num[n] = {14, 44, 5, 18};
-
-    for ( i = 0; i < n; i++)
+    int iteration, j, temp, n = 9;
+    int num[n] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    cout << " The unsorted array" << endl;
+    for (int i = 0; i < n; i++)
     {
-        cout << "Iteration: " << i;
-        for(j=0; j<n-1; j++){
-            if(num[i] > num[j]){
-                temp = num[i];
-                num[i] = num[j];
-                num[j] = temp;
+        cout << num[i] << "\t";
+    }
+    cout << endl;
+    for (iteration = 1; iteration < n; iteration++)
+    {
+        cout << "Iteration=" << iteration << endl;
+        int check = 0;
+        for (j = 0; j < n - 1; j++)
+        {
+            if (num[j + 1] < num[j])
+            {
+                temp = num[j];
+                num[j] = num[j + 1];
+                num[j + 1] = temp;
+                check = 1;
             }
             cout << endl;
-            cout << "j= " << j <<endl;
-            for (int p=0; p<n; p++)
+            cout << "J=" << j << endl;
+            for (int k = 0; k < n; k++)
             {
-                cout << num[p] << "\t";
+                cout << num[k] << "\t";
             }
             cout << endl;
         }
+        if (check == 0)
+        {
+            break;
+        }
     }
+    cout << "The sorted array is " << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout << num[i] << "\t";
+    }
+    cout << endl;
 
-    cout << "THE SORTED ARRAY IS: " << endl;
-    for(int k=0; k<4; k++){
-        cout << num[k] << "\t";
-    }
-    
     return 0;
 }

@@ -16,6 +16,28 @@ void printList(Node *n)
     }
 }
 
+void insertNode(Node *head, int d, int pos){
+    Node *n = new Node();
+    n->data = d;
+    n->next = NULL;
+    if (pos == 1)
+    {
+        n->next = head;
+        head = n;
+    }
+    else
+    {
+        Node *temp = head;
+        for (int i = 0; i < pos - 2; i++)
+        {
+            cout << "temp->data: " << temp->data << endl;
+            temp = temp->next;
+        }
+        n->next = temp->next;
+        temp->next = n;
+    }
+}
+
 int main(int argc, char const *argv[])
 {
     Node *n1 = new Node();
@@ -30,7 +52,11 @@ int main(int argc, char const *argv[])
     n3->next = NULL;
 
     cout << "Linked List: ";
-    // printList(n1);
-    cout << n1->data << " " << n2->data << " " << n3->data << endl;
+    printList(n1);
+    cout << endl;
+    insertNode(n1, 4, 2);
+    cout << "Linked List: ";
+    printList(n1);
+    // cout << n1->data << " " << n2->data << " " << n3->data << endl;
     return 0;
 }
