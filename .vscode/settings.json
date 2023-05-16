@@ -1,14 +1,15 @@
 {
-	"files.associations": {
-		"*.tsx": "typescriptreact",
-		"*.ts": "typescript",
-		"iostream": "cpp",
-		"initializer_list": "cpp",
-		"array": "cpp",
-		"string_view": "cpp",
-		"ostream": "cpp",
-		"xstring": "cpp",
-		"iosfwd": "cpp"
-	},
-	"cmake.configureOnOpen": false
+  "files.associations": {
+    "*.tsx": "typescriptreact",
+    "*.ts": "typescript",
+    "iostream": "cpp",
+    "initializer_list": "cpp",
+    "array": "cpp",
+    "string_view": "cpp",
+    "ostream": "cpp",
+    "xstring": "cpp",
+    "iosfwd": "cpp"
+  },
+  "cmake.configureOnOpen": false,
+  "cmake.sourceDirectory": "D:/Coding/daily-works/C++/Study"
 }
