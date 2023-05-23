@@ -12,7 +12,7 @@ public class StringPassRegex {
             while (!isAllowed) {
                 System.out.println("Enter your password: ");
                 password = scanner.nextLine();
-                String regex = "([a-zA-Z]){8,}";
+                String regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$";
                 Pattern pattern = Pattern.compile(regex);
                 Matcher matcher = pattern.matcher(password);
                 isAllowed = matcher.matches();
