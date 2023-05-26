@@ -7,7 +7,7 @@ public class EmailRegex {
         String email1;
         boolean isAllowed = false;
         String pattern = "^([a-zA-Z[0-9]]){1,}[@][a-zA-Z]*\\.[a-zA-Z]*$";
-        String exampleMatch = "example@.com.br";
+        // String exampleMatch = "example@.com.br";
         try (Scanner scanner = new Scanner(System.in)) {
             while (!isAllowed) {
                 System.out.println("Enter your email: ");

@@ -73,6 +73,7 @@ int main()
         if (origin == -1 || destin == -1)
             break;
         am.add_edge(origin, destin);
+        am.display();
     }
     am.display();
     return 0;

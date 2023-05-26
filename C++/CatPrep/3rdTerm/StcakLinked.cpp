@@ -1,18 +1,16 @@
 #include <iostream>
 using namespace std;
 
-// stack implementation with linked list
 template <typename T>
 class Node
 {
 public:
     T data;
     Node<T> *next;
-
     Node(T data)
     {
         this->data = data;
-        next = NULL;
+        this->next = NULL;
     }
 };
 
@@ -20,52 +18,49 @@ template <typename T>
 class Stack
 {
     Node<T> *head;
-    int size;
+    int capacity;
 
 public:
     Stack()
     {
-        head = NULL;
-        size = 0;
-    }
-
-    int getSize()
-    {
-        return size;
-    }
-    bool isEmpty()
-    {
-        return size == 0;
+        this->head = NULL;
+        capacity = 0;
     }
     void push(T data)
     {
-        Node<T> *newNode = new Node<T>(data);
-        newNode->next = head;
-        head = newNode;
-        size++;
+        Node<T> *temp = new Node<T>(data);
+        temp->next = head;
+        head = temp;
+        capacity++;
     }
-    T pop()
+    void pop()
     {
         if (isEmpty())
         {
             cout << "Stack is empty" << endl;
-            return 0;
+            return;
         }
-        T ans = head->data;   // or T ans = top();
-        Node<T> *temp = head; // make a copy of head pointer to delete
-        head = head->next;    // move head pointer to next node
-        delete temp;          // delete the node
-        size--;
-        return ans; // return the data
+        Node<T> *temp = head;
+        head = head->next;
+        delete temp;
+        capacity--;
     }
     T top()
     {
         if (isEmpty())
         {
             cout << "Stack is empty" << endl;
-            return 0;
+
+            head->data;
         }
-        return head->data;
+    }
+    int size()
+    {
+        return capacity;
+    }
+    bool isEmpty()
+    {
+        return capacity == 0;
     }
 };
 
@@ -86,6 +81,6 @@ int main()
         cout << s.top() << endl;
         s.pop();
     }
-    cout << s.getSize() << endl;
+    cout << s.size() << endl;
     return 0;
 }

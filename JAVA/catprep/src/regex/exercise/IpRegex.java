@@ -4,8 +4,8 @@ import java.util.regex.*;
 
 public class IpRegex {
     public static void main(String[] args) {
-        String ip = "192.168.1.10";
-        String ip1 = "23.324.234-234";
+        // String ip = "192.168.1.10";
+        // String ip1 = "23.324.234-234";
         // my way
         // String regexPatern = "[0-9]{1,3}[\\.][0-9]{1,3}[\\.][0-9]{1,3}[\\.][0-9]{1,3}";
         // copilot way
