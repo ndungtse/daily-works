@@ -33,17 +33,34 @@ class Stack {
         nextIndex++;
     }
     void pushEvenFull(int data) {
-        if (nextIndex == capacity) {
+        // if (nextIndex == capacity) {
+        //     int *newArr = new int[2 * capacity];
+        //     for (int i = 0; i < capacity; i++) {
+        //         newArr[i] = arr[i];
+        //     }
+        //     capacity *= 2;
+        //     delete [] arr;
+        //     arr = newArr;
+        // }
+        // arr[nextIndex] = data;
+        // nextIndex++;
+        
+        cout << "Push Even Full" << endl;
+        // OR
+        if(nextIndex == capacity) {
             int *newArr = new int[2 * capacity];
-            for (int i = 0; i < capacity; i++) {
+            for (int i = 0; i < capacity*2; i++) {
                 newArr[i] = arr[i];
             }
-            capacity *= 2;
-            delete [] arr;
+            newArr[nextIndex] = data;
             arr = newArr;
+            nextIndex++;
+            capacity *= 2;
+            return;
         }
         arr[nextIndex] = data;
         nextIndex++;
+        
     }
     void pop() {
         if (isEmpty()) {
@@ -69,6 +86,8 @@ int main() {
     s.push(40);
     s.push(50);
     s.push(60);
+    s.pushEvenFull(70);
+    s.pushEvenFull(71);
     cout << s.top() << endl;
     s.pop();
     cout << s.top() << endl;
