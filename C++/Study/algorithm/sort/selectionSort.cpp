@@ -42,5 +42,6 @@ int main(int argc, char const *argv[])
     {
         cout << a[i] << " ";
     }
+
     return 0;
 }

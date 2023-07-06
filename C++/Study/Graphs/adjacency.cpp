@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-class AdjacenyMatrix
+class AdjacencyMatrix
 {
     int **adjMatrix;
     int numVertices;
 
 public:
-    AdjacenyMatrix(int numVertices)
+    AdjacencyMatrix(int numVertices)
     {
         this->numVertices = numVertices;
         adjMatrix = new int *[numVertices];
@@ -38,7 +38,7 @@ public:
             cout << "\n";
         }
     }
-    ~AdjacenyMatrix()
+    ~AdjacencyMatrix()
     {
         for (int i = 0; i < numVertices; i++)
             delete[] adjMatrix[i];
@@ -48,7 +48,7 @@ public:
 
 int main()
 {
-    AdjacenyMatrix am(4);
+    AdjacencyMatrix am(4);
     am.addEdge(0, 1);
     am.addEdge(1, 2);
     am.addEdge(2, 3);

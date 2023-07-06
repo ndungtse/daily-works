@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int binarySearc(int arr[], int search, int start, int end)
+int binarySearch(int arr[], int search, int start, int end)
 {
     if (start > end)
     {
@@ -14,10 +14,10 @@ int binarySearc(int arr[], int search, int start, int end)
     }
     else if (arr[mid] > search)
     {
-        return binarySearc(arr, search, start, mid - 1);
+        return binarySearch(arr, search, start, mid - 1);
     }
     else
     {
-        return binarySearc(arr, search, mid + 1, end);
+        return binarySearch(arr, search, mid + 1, end);
     }
 }

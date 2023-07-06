@@ -16,12 +16,35 @@ public:
         Node *curr = head;
         Node *next = NULL;
         while(curr != NULL) {
+            // Store next node in next pointer
             next = curr->next;
+            // Reverse the link
             curr->next = prev;
+            // Move pointers one position ahead
             prev = curr;
             curr = next;
         }
         return prev;
+    }
+
+    void insertPos(Node *head, int pos, int data) {
+        Node *temp = new Node(data);
+        Node *curr = head;
+        for(int i = 0; i < pos - 1; i++) {
+            curr = curr->next;
+        }
+        temp->next = curr->next;
+        curr->next = temp;
+    }
+
+    void deletePos(Node *head, int pos) {
+        Node *curr = head;
+        for(int i = 0; i < pos - 1; i++) {
+            curr = curr->next;
+        }
+        Node *temp = curr->next;
+        curr->next = temp->next;
+        delete temp;
     }
 };
 
@@ -32,6 +55,16 @@ void printList(Node *n)
         cout << n->data << " ";
         n = n->next;
     }
+}
+
+void insertPos(Node *head, int pos, int data) {
+    Node *temp = new Node(data);
+    Node *curr = head;
+    for(int i = 0; i < pos - 1; i++) {
+        curr = curr->next;
+    }
+    temp->next = curr->next;
+    curr->next = temp;
 }
 
 int main(int argc, char const *argv[])

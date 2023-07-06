@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     int iteration, j, temp, n = 9;
-    int num[n] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int num[n] = {5, 7, 8, 1, 2, 6, 3, 4, 9};
     cout << " The unsorted array" << endl;
     for (int i = 0; i < n; i++)
     {

@@ -15,7 +15,7 @@ public:
 };
 
 /**
- * Stack implementation with linked list
+ *Stack implementation with linked list
  * @authors ndungutse charles, hirwa vannesa and rosine
 */
 class Stack

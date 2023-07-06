@@ -1,22 +1,41 @@
 #include <iostream>
 
-using namespace std;
+void printArray(int arr[], int len)
+{
+    std::cout << "Iteration=" << std::endl;
+    for (int i = 0; i < len; i++)
+    {
+        std::cout << arr[i] << "\t";
+    }
+    std::cout << std::endl;
+}
+
+void insertionSort(int arr[], int len)
+{
+    int i, j, key;
+    for (i = 1; i < len; i++)
+    {
+        key = arr[i];
+        j = i - 1;
+        while (j >= 0 && arr[j] > key)
+        {
+            arr[j + 1] = arr[j];
+            j--;
+            // std::cout << "J=" << j << std::endl;
+            // printArray(arr, len);
+        }
+        arr[j + 1] = key;
+    }
+}
 
 int main(int argc, char const *argv[])
 {
-    int scores[] = {52, 78, 68, 88, 63, 75, 90, 78};
-    int item = 10, k=9, len=9, j=len-1;
-
-    while (j >= k)
+    int numbers[10] = {5, 7, 8, 1, 2, 6, 3, 4, 9, 10};
+    insertionSort(numbers, 10);
+    for (int i = 0; i < 10; i++)
     {
-        scores[j+1] = scores[j];
-        j--;
+        std::cout << numbers[i] << "\t";
     }
-    scores[k] = item;
-
-    for (int i = 0; i < 20; i++)
-    {
-        cout << scores[i] << " ";
-    }
+    std::cout << std::endl;
     return 0;
 }
