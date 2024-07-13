@@ -195,7 +195,7 @@ export default class Graph {
 
   /**
    * @description Return the shortest path from v to w.
-   * @param {any} v The starting vertex.
+   * @param {number} v The starting vertex.
    * @returns {object} The shortest path.
    * @memberof Graph
    * @time complexity: O(V + E)

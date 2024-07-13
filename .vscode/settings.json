@@ -74,5 +74,6 @@
     "valarray": "cpp"
   },
   "cmake.configureOnOpen": false,
+  "editor.formatOnSave": true,
   "cmake.sourceDirectory": "D:/Coding/daily-works/C++/Study"
 }

@@ -5,3 +5,7 @@
 *lib
 *bin
 */dist
+# ignoring all files and folders without extension
+*
+!*/
+!*.*
