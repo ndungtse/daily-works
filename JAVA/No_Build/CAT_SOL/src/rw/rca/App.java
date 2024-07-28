@@ -1,27 +1,30 @@
 package rw.rca;
 
-import java.util.Date;
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.TreeSet;
 
 public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.print("===================== Welcome to Electricity invoice generator====================");
+    public static void main(String[] args) {
+        Student student = new Student("Charles", "Brown", 19);
+        System.out.println(student.toString());
+        Student student2 = new Student("John", "Doe", 20);
+        List<Student> students = new ArrayList<>(Arrays.asList(student, student2, new Student("Jane", "Doe", 18)));
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter Your names: ");
-        String cnames = scanner.nextLine();
+        int comp = student.compareTo(students.get(1));
+        System.out.println(comp);
+        students.forEach((s) -> System.out.println(s.toString()));
 
-        System.out.print("Enter Your meter number: ");
-        long cmeter_number = scanner.nextLong();
+        System.out.println("\n====== SORTED ======");
+        students.sort((s1, s2) -> s1.compareTo(s2));
+        // Collections.sort(students, (s1, s2) -> s1.compareTo(s2));
+        students.forEach((s) -> System.out.println(s.toString()));
 
-        System.out.print("Enter Your Category: ");
-        String category = scanner.nextLine();
-
-        scanner.close();
-
-        Customer cust1 = new Customer(cnames, cmeter_number, category);
-        Invoice inv = new Invoice(cust1, new Date(), 12, 1000);
-        inv.createInvoice(cust1.getNames() + ".txt");
+        System.out.println("\n====== SORTED WITH DUPLICATE (treeset) ======");
+        students.add(student2);
+        TreeSet<Student> sorted = new TreeSet<>(students);
+        sorted.forEach((s) -> System.out.println(s.toString()));
 
     }
 }

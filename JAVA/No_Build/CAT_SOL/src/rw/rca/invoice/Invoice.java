@@ -1,4 +1,5 @@
 package rw.rca;
+
 import java.io.*;
 import java.util.*;
 
@@ -9,7 +10,8 @@ public class Invoice {
     private double purchased_unit;
     private double last_purchased_cost;
 
-    public Invoice() {}
+    public Invoice() {
+    }
 
     public Invoice(Customer customer, Date purchase_date, double purchased_unit, double last_purchased_cost) {
         this.customer = customer;
@@ -59,17 +61,18 @@ public class Invoice {
         this.purchased_unit = purchased_unit;
     }
 
-    void createInvoice(String name){
+    public void createInvoice(String name) {
         try {
             File file = new File(name);
             // if (file.createNewFile()) {
-                System.out.println("File created: " + file.getName());
-                FileWriter writer = new FileWriter(file);
-                writer.append(this.meter_number + " , " + this.last_purchased_cost + " , " + this.purchased_unit + " , " + this.purchase_date);
-                System.out.println("Sucessfully created an invoice");
-                writer.close();
+            System.out.println("File created: " + file.getName());
+            FileWriter writer = new FileWriter(file);
+            writer.append(this.meter_number + " , " + this.last_purchased_cost + " , " + this.purchased_unit + " , "
+                    + this.purchase_date);
+            System.out.println("Sucessfully created an invoice");
+            writer.close();
             // } else {
-            //     System.out.println("File already exists.");
+            // System.out.println("File already exists.");
             // }
         } catch (IOException e) {
             System.out.println("An error occurred.");
