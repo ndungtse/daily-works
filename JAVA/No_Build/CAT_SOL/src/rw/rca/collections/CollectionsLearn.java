@@ -14,21 +14,18 @@ public class CollectionsLearn {
         TreeSet<String> names = new TreeSet<>();
         names.add("John");
         names.add("Jane");
+        names.add("Catherine");
         names.add("James");
         names.add("Judy");
-        names.add("Catherine");
-
-        
-        // for (String name : names) {
-        //     System.out.println(name);
-        // }
+        // names.stream().filter(name ->
+        // name.startsWith("J")).forEach(System.out::println);
 
         // queue example
         PriorityQueue<String> queue = new PriorityQueue<>();
         queue.add("John");
         queue.add("Jane");
         queue.add("charles");
-        
+
         System.out.println("Queue: " + queue);
 
         HashSet<String> set = new HashSet<>();
@@ -58,6 +55,7 @@ public class CollectionsLearn {
         // list.sort((s1, s2) -> s1.compareTo(s2));
         Collections.sort(list, (a, b) -> a.compareTo(b));
         list.forEach(System.out::println);
+        map.forEach((k, v) -> System.out.println("Key: " + k + " Value: " + v));
     }
-    
+
 }

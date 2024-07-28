@@ -13,7 +13,7 @@ public:
         data = d;
         next = NULL;
     }
-    void setNext(Node *n)
+    void setNext(Node *n) // get n as type Node
     {
         next = n;
     }
